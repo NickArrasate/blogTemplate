@@ -4,9 +4,9 @@
   margin-bottom: 30px;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #2AB7CA;
-  background-image: -webkit-linear-gradient(left, #2AB7CA 40%, #77d6e3 100%);
-  background-image: linear-gradient(to right,#2AB7CA 40%, #77d6e3 100%); }
+  background-color: #77CBB9;
+  background-image: -webkit-linear-gradient(left, #77CBB9 40%, #c1e7df 100%);
+  background-image: linear-gradient(to right,#77CBB9 40%, #c1e7df 100%); }
 
 .post-content {
   border-top-left-radius: 15px;
@@ -16,20 +16,34 @@
   padding: 8px; }
   .post-content h2 {
     font-size: 22px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-weight: bold; }
 
 .comments {
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  margin-left: 15px;
-  border-left: 4px solid #0B4F6C;
-  border-top: 4px solid #0B4F6C; }
+  margin-left: 15px; }
   .comments .comment {
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    border-left: 4px solid #4c8f92;
+    border-top: 4px solid #4c8f92;
     margin-bottom: 10px;
-    padding: 8px;
-    background: #b7e9f0; }
+    padding: 8px 8px 8px 16px;
+    background: #f8fcfb; }
+    .comments .comment p:last-child {
+      margin-left: 6px;
+      padding-left: 10px;
+      border-left: 2px solid #c8e1e2; }
+
+.comment-title, .comment-author {
+  margin: 8px;
+  font-weight: bold;
+  color: #292F36; }
+
+.comment-author:hover {
+  cursor: pointer;
+  color: #85BDBF; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126

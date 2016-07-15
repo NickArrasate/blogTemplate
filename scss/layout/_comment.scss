@@ -2,14 +2,30 @@
 .comments {
   @include radius;
   margin-left: 15px;
-  border-left: 4px solid $color-blue-med;
-  border-top: 4px solid $color-blue-med;
 
   .comment{
     @include radius;
+    @include half-border;
     margin-bottom: 10px;
-    padding: 8px;
+    padding: 8px 8px 8px 16px;
     background: lighten($color-blue-light, 35%);
+    & p:last-child{
+      margin-left: 6px;
+      padding-left: 10px;
+      border-left: 2px solid lighten($color-blue-med, 20%);
+    }
   }
 
+}
+.comment-title{
+  margin: 8px;
+  font-weight: bold;
+  color: $grey-dark;
+}
+.comment-author{
+  @extend .comment-title;
+  &:hover{
+    cursor: pointer;
+    color: $color-blue-med;
+  }
 }
