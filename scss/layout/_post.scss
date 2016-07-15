@@ -1,0 +1,18 @@
+
+.post {
+  padding: 15px;
+  color: $grey-dark;
+  margin-bottom: 30px;
+  @include radius;
+  @include gradient(right, $color-blue-light);
+}
+.post-content{
+  @include radius;
+  background: $color-white;
+  margin-bottom: 10px;
+  padding: 8px;
+  h2{
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}

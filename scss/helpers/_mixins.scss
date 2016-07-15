@@ -1,0 +1,7 @@
+@mixin radius {
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+@mixin gradient($direction, $color) {
+  @include linear-gradient(to $direction, $color 40%, lighten($color, 20%) 100%);
+}
